@@ -1,5 +1,4 @@
 markdown: rdiscount
 pygments: true
 baseurl : /lxp561784.github.com
-permalink: /:year/:month/:day/:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
