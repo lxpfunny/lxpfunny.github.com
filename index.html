@@ -1,0 +1,18 @@
+---
+ layout: default
+ title: 我去，真费劲！
+---
+
+<h2>{{ page.title }}</h2>
+
+<p>我的第一篇用github+jekyll搭建的blog，从此开启我的博客之旅。现在看起来很简单，很丑，不久的将来，会做出一个漂亮，性感的个人网站！敬请期待！<p>
+
+<ul>
+
+{% for post in site.posts %} 
+
+<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+
+{% endfor %}
+
+</ul>
