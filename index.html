@@ -1,18 +1,24 @@
 ---
- layout: default
- title: 我去，真费劲！
+ layout: master
+ title: 李晓鹏
+ full_posts: 3
 ---
 
-<h2>{{ page.title }}</h2>
+<div class='home-box' id='home-left'>
+  <h2><a href='atom.xml' class='float-right'
+      ><img src='/images/subscribe-icon.gif' alt='Subscribe'/></a
+      >最新博客（<a href='/blog.html'>更多</a>）</h2>
 
-<p>我的第一篇用github+jekyll搭建的blog，从此开启我的博客之旅。现在看起来很简单，很丑，不久的将来，会做出一个漂亮，性感的个人网站！敬请期待！<p>
+{% for post in site.posts limit:page.full_posts %}
+  <div class='post'>
+    <span class='date'>{{post.date | date: "%d %b %Y"}}</span>
+    <a href='{{post.url}}#comments' title='分享文章、查看评论' style="float:right;margin-right:.5em;">Comments</a>
+    <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
+    <div class='body'>{{post.content}}</div>
 
-<ul>
-
-{% for post in site.posts %} 
-
-<li>1111</a></li>
-
+  </div>
 {% endfor %}
+
+</div>
 
 </ul>
