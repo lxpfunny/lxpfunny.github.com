@@ -20,6 +20,15 @@
 {% endfor %}
 
   </div>
+  <!--Baidu站内搜索开始-->
+      <script language="javascript">
+      function baidusearch () {
+      var wd=document.getElementsByName("wd")[0].value;
+      var link="http://www.baidu.com/s?si=www.kafeitu.me&cl=3&ct=2097152&tn=baidulocal&word="+wd;
+      window.open(link); }
+      </script>
+      <input type="text" name="wd" size="26"/><input type="submit" title="时Google加载不出来，所以把度娘请出来为大家服务" onclick="javascript:baidusearch()" value="站内搜索" />
+      <!--Baidu站内搜索结束-->
   <div class='home-box' id='home-right'>
   	<h2>最新评论</h2>
   <div class='sidebar'>
