@@ -1,28 +1,152 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
 
 <html>
-
-<head>
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-<title>Blog1反反复复11</title>
-
-</head>
-
-<body>
-
-<h2>Blog1</h2>
-
-<p>第一篇文章反反复复<p>
-
-<ul>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link REL="SHORTCUT ICON" HREF="http://lxp561784.github.com/images/lixiaopeng.jpg"/>
+    <!-- weibo -->
+    <meta property="wb:webmaster" content="61eb31a6e636506d" />
 
 
+    <!-- seo -->
+    <meta name="description" content="李晓鹏lxpfunny" />
+    <meta name="keywords" content="html,xhtml,css,js,javascript,ajax,jQuery,java,struts,struts2,hibernate,spring,jpa,maven,ant,springside,敏捷,CI,Jenkins,Hudson,咖啡兔,HenryYan,git,github,jekyll,markdown,wiki" />
+    <meta name="baidu-site-verification" content="FRWUEtd1UTgfhtF7" />
+    <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+    <meta name="wumiiVerification" content="927cabdf-a0cc-4638-b1db-e9e398dddf1c" />
+    <meta name="ujianVerification" content="e8f5292dbe28276a7e530a95c5832df3" />
 
-</ul>
+
+    <title>李晓鹏 - lxpfunny</title>
+    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="screen" charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="/javascripts/syntaxhighlighter/styles/shCoreMidnight.css"/>
+    <link type="text/css" rel="stylesheet" href="/javascripts/syntaxhighlighter/styles/shThemeMidnight.css"/>
+    <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery.github.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+  <a href="http://github.com/lxp561784/lxp561784.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+    <div id='wrapper'>
+      <div id='header'>
+        <h1><a href='/'>李晓鹏</a></h1>
+        
+        <div id='menu'>
+          <ul>
+            <li><a href='/' id='home-link' title='Home'>首页</a></li>
+            <li><a href='/blog.html' id='blog-link' title='Blog'>博客</a></li>
+            <li><a href='/tags.html' id='tags-link' title='Tags'>标签</a></li>
+            <li><a href='/about.html' id='about-link' title='About'>关于</a></li>
+            <li><a href='http://github.com/lxp561784' target='_blank' title='GitHub' rel='me' id='github-link'>GitHub</a></li>
+            <li><a href='http://weibo.com/lxpfunny' title='微博' target='_blank' id='weibo-link'>微博</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id='content'>
+        <div class='home-box' id='home-left'>
+  <h2><a href='atom.xml' class='float-right'
+      ><img src='/images/subscribe-icon.gif' alt='Subscribe'/></a
+      >最新博客（<a href='/blog.html'>更多</a>）</h2>
 
 
- </body>
+  <div class='post'>
+    <span class='date'>03 Aug 2014</span>
+    <a href='/2014/08/03/install_jekyll.html#comments' title='分享文章、查看评论' style="float:right;margin-right:.5em;">Comments</a>
+    <h1><a href='/2014/08/03/install_jekyll.html'>在本地安装jekyll测试环境</a></h1>
+    <div class='body'><p> <p>第一次安装jekyll的同学肯定会痛苦的说，这鸟玩样真费劲。这里我只能说一个简单的步骤。不敢保证操作过程中不会出现问题。</p>
+ <p>1.首先下载rubyinstaller ,下载DevKit。</p>
+ <p>2.安装rubyinstaller,解压devkit。rubyinstaller默认安装目录在c盘下。</p>
+ <p>3.进入devkit解压目录下，双击msys.bat，运行ruby dk.rb init,这时目录下会生成一个config.yml文件，打开按照提示配置ruby的安装目录</p></p>
 
+<p>需要注意的是- 后面要有一个空格</p>
+
+
+<p><p>4.运行gem sources 查看使用的是哪个资源库，把资源库换成http://ruby.taobao.org/，gem sources remove 《url》 删除资源库   gem sources add 《URL》 添加资源库<p>
+<p>5.一次运行 gem install rubygems-update  gem update --system gem install jekyll，如果下载过程中没出现什么问题，结束后jekyll就安装成功。就可以使用jekyll在本地测试了。
+</p></p>
+</div>
+
+  </div>
+
+  <div class='post'>
+    <span class='date'>22 Jul 2014</span>
+    <a href='/2014/07/22/firstblog.html#comments' title='分享文章、查看评论' style="float:right;margin-right:.5em;">Comments</a>
+    <h1><a href='/2014/07/22/firstblog.html'>firstblog</a></h1>
+    <div class='body'><p>我的第一篇blog文章</p>
+
+
+<p>经过几天的努力，终于构建出属于自己的博客网页模板，从此可以在这个博客下记录自己在工作和学习中的点滴。现在网站还存在小许错误，慢慢就可以完善起来，想要学习如何用github+jekyll搭建博客的同僚可以fork本github项目到自己的github下，把github库名称改成username.github.com（username为自己github的用户名称）</p>
+
+</div>
+
+  </div>
+
+
+  </div>
+  <div class='home-box' id='home-right'>
+  	<h2>最新评论</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+    <ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></ul>
+	<script>if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments('.ds-recent-visitors');</script>
+    </div>
+  </div>
+  <h2>最近访客</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+    <ul class="ds-recent-visitors" data-num-items="10"></ul>
+<script>if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentVisitors('.ds-recent-visitors');</script>
+    </div>
+  </div>
+  <h2>联系方式</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+    <ul>
+      <li>邮件：lxp_funny@163.com</li>
+      <li>QQ ：953423356</li>
+      <li>微博：<a href="http://weibo.com/lxpfunny" target="_blank">@lxpfunny</a></li>
+    </ul>
+    </div>
+  </div>
+  <h2>微博</h2>
+  <div class='sidebar'>
+    <div class="sidebar-item">
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1741893144&verifier=9b75a6f7&dpc=1"></iframe>
+
+</div>
+ </div>
+</div>
+
+
+
+        <div class='clearfix'></div>
+      </div>
+      <!-- Duoshuo Comment BEGIN -->
+      <div class="ds-thread"></div>
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name: "lxpfunny"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+      <!-- Duoshuo Comment END -->
+
+    </div>
+    <div id='footer'>
+      Copyright &copy; 2014 李晓鹏|lxpfunny. Hosted by <a href='http://github.com/lxp561784/lxp561784.github.com/' target='_blank'>GitHub</a> and powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>. Templates from <a href='http://github.com/henryyan/henryyan.github.com/' target='_blank'>henryyan</a>.
+    </div>
+
+
+    <!-- UJian Button BEGIN -->
+    <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&num=8&btn=4&uid=1537991"></script>
+    <!-- UJian Button END -->
+	 <script src="http://s96.cnzz.com/stat.php?id=2566493&web_id=2566493&show=pic" language="JavaScript"></script>
+  </body>
 </html>
