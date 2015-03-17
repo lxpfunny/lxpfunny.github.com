@@ -1,6 +1,6 @@
 ---
 layout: post
-title:使用nexus配置maven代理服务器学习笔记
+title: 使用nexus配置maven代理服务器学习笔记
 ---
  <p>
  	要用nexus配置maven私服，首先需要在服务器中安装nexus。nexus下载地址：http://www.sonatype.org/nexus/
