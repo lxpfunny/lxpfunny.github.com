@@ -7,7 +7,7 @@ title:使用nexus配置maven代理服务器学习笔记
  </p>
  <p>
  	下载之后解压到随意目录，在安装目录下D:\nexus\nexus-2.11.2-04\bin\jsw\找到对应系统目录，
- 	点击console-nexus.bat启动nexus服务器。在留言器中输入http://localhost:8081/nexus进入nexus，用admin/admin123登陆 。可以看到：
+ 	点击console-nexus.bat启动nexus服务器。在浏览器中输入http://localhost:8081/nexus进入nexus，用admin/admin123登陆 。可以看到：
  </p>
  <img src='/images/nexus-01.png' alt='nexus-01'/>
  <p>
