@@ -14,24 +14,25 @@ title:使用nexus配置maven代理服务器学习笔记
  	点击respositories在右边窗口中看到所有仓库。仓库类型分为：group、hosted、proxy,group是仓库组，可以包括多个hosted，proxy仓库，hosted是本地仓库使用mvn depoy上传的仓库，proxy是官方代理仓库。
  </p>
  <p>
-
  	在maven项目中的parent pom.xml中配置
  </p>
  <p>
- 	<repositories></br>
-  	<repository></br>
-  		<id>nexus</id></br>
-  		<name>nexus respo</name></br>
-  		<url>http://localhost:8081/nexus/content/groups/public/</url></br>
-  		<releases></br>
-  			<enabled>true</enabled></br>
-  		</releases></br>
-  		<snapshots></br>
-  			<!-- 默认是关闭的 --></br>
-  			<enabled>true</enabled></br>
-  		</snapshots></br>
-  	</repository></br>
-  </repositories></br>
+
+
+ 	<repositories>
+  	<repository>
+  		<id>nexus</id>
+  		<name>nexus respo</name>
+  		<url>http://localhost:8081/nexus/content/groups/public/</url>
+  		<releases>
+  			<enabled>true</enabled>
+  		</releases>
+  		<snapshots>
+  			<!-- 默认是关闭的 -->
+  			<enabled>true</enabled>
+  		</snapshots>
+  	</repository>
+  </repositories>
  </p>
  <p>指定nexus私服，项目在添加新的依赖后会在配置的私服中下载新的jar包，如果没有私服会自动去中央仓库中下载</p>
  <p>
@@ -41,47 +42,49 @@ title:使用nexus配置maven代理服务器学习笔记
  	在settings.xml中添加profile标签
  </p>
  <p>
- 	 <profile></br>
-      <id>nexusprofile</id></br>
-     
 
-      <repositories></br>
-        <repository></br>
-          <id>nexus</id></br>
-          <name>nexus respo</name></br>
-          <url>http://localhost:8081/nexus/content/groups/public/</url></br>
-          <releases></br>
-            <enabled>true</enabled></br>
-          </releases></br>
-          <snapshots></br>
-            <!-- 默认是关闭的 --></br>
-            <enabled>true</enabled></br>
-          </snapshots></br>
-      </repository></br>
-    </repositories></br>
-    </profile></br>
+
+ 	 <profile>
+      <id>nexusprofile</id>
+      <repositories>
+        <repository>
+          <id>nexus</id>
+          <name>nexus respo</name>
+          <url>http://localhost:8081/nexus/content/groups/public/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <!-- 默认是关闭的 -->
+            <enabled>true</enabled>
+          </snapshots>
+      </repository>
+    </repositories>
+    </profile>
  </p>
  <p>配置了profile以后还需要把这个profile打开，才会使用到</p>
  <p>
- 	使用 </br>
- 	<activeProfiles></br>
-    <!--激活生效--></br>
-    <activeProfile>centralprofile</activeProfile></br>
-  </activeProfiles></br>
+ 	使用 
+
+
+ 	<activeProfiles>
+    <!--激活生效-->
+    <activeProfile>centralprofile</activeProfile>
+  </activeProfiles>
   将上面得profile打开
  </p>
  <p>
  	这种配置当项目添加依赖后，在私服中不到，就会去中央仓库中下载，如果不需要去中央仓库中下载，需要配置镜像。
  </p>
  <p>
-	<mirror></br>
-      <id>nexusMirror</id></br>
-      <mirrorOf>*</mirrorOf><!--repositoryId--></br>
-      <name>Human Readable Name for this Mirror.</name></br>
-      <url>http://localhost:8081/nexus/content/groups/public/</url></br>
-    </mirror></br>
+
+
+	<mirror>
+      <id>nexusMirror</id>
+      <mirrorOf>*</mirrorOf><!--repositoryId-->
+      <name>Human Readable Name for this Mirror.</name>
+      <url>http://localhost:8081/nexus/content/groups/public/</url>
+    </mirror>
  </p>
  <p>这个配置的意思是如果项目中添加新的依赖,maven所有的仓库都会先在私服中下载，如果没有，不会再去中央仓库中下载</p>
- <p>
-
- </p>
+ 
