@@ -7,10 +7,10 @@ title: 在Spring中获取ServletContext方法
 </p>
 
 <p>
-	
 
-	WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();   
-    ServletContext servletContext = webApplicationContext.getServletContext(); 
+
+WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();   
+ServletContext servletContext = webApplicationContext.getServletContext(); 
 </p>
 
 
