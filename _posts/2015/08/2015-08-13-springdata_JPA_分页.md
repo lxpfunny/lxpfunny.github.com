@@ -47,4 +47,4 @@ public Page<CodeEntry> findAll( Specification spec,Pageable pageRequest);
             return spec;
         }
 </pre>
-<p>创建Specification时需要要有<a href="http://github.com/lxp561784/lxp561784.github.com/tree/master/code">searchFilter</a>和[DynamicSpecifications](http://github.com/lxp561784/lxp561784.github.com/tree/master/code)类支持，点击去github克隆源码</p>
+<p>创建Specification时需要要有<a href="http://github.com/lxp561784/lxp561784.github.com/tree/master/code">searchFilter</a>和<a href="http://github.com/lxp561784/lxp561784.github.com/tree/master/code">DynamicSpecifications]</a>类支持，点击去github克隆源码</p>
